@@ -36,3 +36,17 @@ It is social in the sense that users are notified of the flashcards that others 
 
 - I first want to get an app that I actually use, e.g. with real flashcards (e.g. Polish, a language I'm currently learning) which appear readable on my smart phone and which I can click to hide/show
 - the next tasks will come from the features I think up that I want as I use the app
+
+## generating flashcards
+
+- this site will first run on a JSON file as a database until we get an online database for users with authentication, etc.
+- if you want to generate flashcards for this site, see `src/data/flashcards.json`
+- to create a random **Short Unique ID**, generate one here: https://shortunique.id
+- currently you just need to create for each object:
+  - id = short unique id
+  - category
+    - `pl` = Polish
+    - `fr` = Frensh
+    - `es` = Spanish
+  - front
+  - back
