@@ -1,0 +1,44 @@
+[
+	{
+		"id": "IQTpNs",
+		"category": "pl",
+		"front": "that's great",
+		"back": "to świetnie",
+		"pronunciation": ""
+	},
+	{
+		"id": "PTPkqa",
+		"category": "pl",
+		"front": "I want to speak more polish",
+		"back": "chcę mówić bardziej po polsku",
+		"pronunciation": "hitSEH...BAR-jay"
+	},
+	{
+		"id": "dCHzoB",
+		"category": "pl",
+		"front": "but it is difficult",
+		"back": "ale to trudne",
+		"pronunciation": ""
+	},
+	{
+		"id": "yXpTPw",
+		"category": "pl",
+		"front": "yes, I speak a little Polish",
+		"back": "tak, mówię trochę po polsku",
+		"pronunciation": "MOO-vee-yeh TROH-/ch/ay"
+	},
+	{
+		"id": "EPTyvp",
+		"category": "pl",
+		"front": "numbers 1-20",
+		"back": "",
+		"pronunciation": "jeden, dwa, trzy, cztery, pięć, sześć, siedem, osiem, dziewięć, dziesięć, jedenaście, dwanaście, trzynaście, czternaście, piętnaście, szesnaście, siedemnaście, osiemnaście, dziewiętnaście, dwadzieścia."
+	},
+	{
+		"id": "oPJtRX",
+		"category": "pl",
+		"front": "numbers 20, 30, ... 100",
+		"back": "",
+		"pronunciation": "dwadzieścia, trzydzieści, czterdzieści, pięćdziesiąt, sześćdziesiąt, siedemdziesiąt, osiemdziesiąt, dziewięćdziesiąt, sto"
+	}
+]
