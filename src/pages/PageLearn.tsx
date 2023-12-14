@@ -1,5 +1,25 @@
+import flashcards from "../data/flashcards.json";
+import * as tools from "../tools";
+
 export const PageLearn = () => {
 	return (
-		<p>This is the learn page.</p>
-	)
-}
+		<>
+			{flashcards.map((flashcard) => {
+				return (
+					<div className="bg-gray-500 mb-3 p-3 rounded">
+						<p className="smallcaps text-gray-700">
+							{tools.getCategoryName(flashcard.category)}
+						</p>
+						<p className="text-xl">{flashcard.front}</p>
+						<p className="text-xl">{flashcard.back}</p>
+						{flashcard.pronunciation && (
+							<p className="text-xl font-mono text-gray-600">
+								[{flashcard.pronunciation}]
+							</p>
+						)}
+					</div>
+				);
+			})}
+		</>
+	);
+};

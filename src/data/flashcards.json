@@ -31,14 +31,14 @@
 		"id": "EPTyvp",
 		"category": "pl",
 		"front": "numbers 1-20",
-		"back": "",
-		"pronunciation": "jeden, dwa, trzy, cztery, pięć, sześć, siedem, osiem, dziewięć, dziesięć, jedenaście, dwanaście, trzynaście, czternaście, piętnaście, szesnaście, siedemnaście, osiemnaście, dziewiętnaście, dwadzieścia."
+		"back": "jeden, dwa, trzy, cztery, pięć, sześć, siedem, osiem, dziewięć, dziesięć, jedenaście, dwanaście, trzynaście, czternaście, piętnaście, szesnaście, siedemnaście, osiemnaście, dziewiętnaście, dwadzieścia.",
+		"pronunciation": ""
 	},
 	{
 		"id": "oPJtRX",
 		"category": "pl",
 		"front": "numbers 20, 30, ... 100",
-		"back": "",
-		"pronunciation": "dwadzieścia, trzydzieści, czterdzieści, pięćdziesiąt, sześćdziesiąt, siedemdziesiąt, osiemdziesiąt, dziewięćdziesiąt, sto"
+		"back": "dwadzieścia, trzydzieści, czterdzieści, pięćdziesiąt, sześćdziesiąt, siedemdziesiąt, osiemdziesiąt, dziewięćdziesiąt, sto",
+		"pronunciation": ""
 	}
 ]
