@@ -6,12 +6,12 @@ It is social in the sense that users are notified of the flashcards that others 
 
 ## online site
 
-- This app is online here: https://soflash.vercel.app
+- this app is online here: https://soflash.vercel.app
 
 ## team
 
-- Currently [Edward Tanguay](https://github.com/edwardtanguay) is the only developer of this project
-- This is a project in the [Online Learning Club]()
+- currently [Edward Tanguay](https://github.com/edwardtanguay) is the only developer of this project
+- this is a project in the [Online Learning Club]()
 
 ## general plan
 
