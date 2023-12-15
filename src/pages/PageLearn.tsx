@@ -10,8 +10,8 @@ export const PageLearn = () => {
 						<p className="smallcaps text-gray-700">
 							{tools.getCategoryName(flashcard.category)}
 						</p>
-						<p className="text-xl">{flashcard.front}</p>
-						<p className="text-xl">{flashcard.back}</p>
+						<p className="text-xl font-semibold">{flashcard.front}</p>
+						<p className="text-xl italic text-orange-900">{flashcard.back}</p>
 						{flashcard.pronunciation && (
 							<p className="text-xl font-mono text-gray-600">
 								[{flashcard.pronunciation}]
