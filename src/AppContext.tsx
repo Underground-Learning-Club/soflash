@@ -1,6 +1,6 @@
 import { createContext } from "react";
 import { IFlashcard } from "./dataLayer/interfaces";
-import _flashcards from "./data/flashcards.json";
+import { getFlashcards } from "./dataLayer/appModel";
 
 interface IAppContext {
 	flashcards: IFlashcard[]
@@ -13,7 +13,7 @@ interface IAppProvider {
 export const AppContext = createContext<IAppContext>({} as IAppContext);
 
 export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
-	const flashcards = _flashcards;
+	const flashcards = getFlashcards();
 
 	return (
 		<AppContext.Provider
