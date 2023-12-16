@@ -1,5 +1,19 @@
 [
 	{
+		"id": "Q7jjKo",
+		"category": "pl",
+		"front": "I can say ... for example",
+		"back": "mogę powiedzieć ... na przykład",
+		"pronunciation": "MOH-geh NAHP-SHIH-qwahd"
+	},
+	{
+		"id": "mQQL8A",
+		"category": "pl",
+		"front": "how can I say ... in Polish",
+		"back": "jak powiedzieć nnn po polsku",
+		"pronunciation": ""
+	},
+	{
 		"id": "IQTpNs",
 		"category": "pl",
 		"front": "that's great",
