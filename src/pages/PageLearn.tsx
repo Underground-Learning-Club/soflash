@@ -8,7 +8,7 @@ export const PageLearn = () => {
 		<>
 			{flashcards.map((flashcard) => {
 				return (
-					<Flashcard flashcard={flashcard}/>
+					<Flashcard flashcard={flashcard} key={flashcard.id} />
 				)
 			})}
 		</>
