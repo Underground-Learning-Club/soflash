@@ -1,12 +1,14 @@
-import flashcards from "../data/flashcards.json";
+import { useContext } from "react";
+import { AppContext } from "../AppContext";
 import * as tools from "../tools";
 
 export const PageLearn = () => {
+	const { flashcards } = useContext(AppContext);
 	return (
 		<>
 			{flashcards.map((flashcard) => {
 				return (
-					<div className="bg-gray-500 mb-3 p-3 rounded">
+					<div key={flashcard.id} className="bg-gray-500 mb-3 p-3 rounded">
 						<p className="smallcaps text-gray-700">
 							{tools.getCategoryName(flashcard.category)}
 						</p>
