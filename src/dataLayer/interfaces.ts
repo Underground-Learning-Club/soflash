@@ -4,4 +4,5 @@ export interface IFlashcard {
 	front: string;
 	back: string;
 	pronunciation: string;
+	isOpen: boolean;
 }
