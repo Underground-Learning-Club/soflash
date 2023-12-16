@@ -8,12 +8,12 @@ export const PageLearn = () => {
 		<>
 			{flashcards.map((flashcard) => {
 				return (
-					<div key={flashcard.id} className="bg-gray-500 mb-3 p-3 rounded">
+					<div key={flashcard.id} className="bg-yellow-100 mb-3 p-3 rounded">
 						<p className="smallcaps text-gray-700">
 							{tools.getCategoryName(flashcard.category)}
 						</p>
 						<p className="text-xl font-semibold">{flashcard.front}</p>
-						<p className="text-xl italic text-green-300">{flashcard.back}</p>
+						<p className="text-xl italic text-green-700 font-semibold">{flashcard.back}</p>
 						{flashcard.pronunciation && (
 							<p className="text-xl font-mono text-gray-600">
 								[{flashcard.pronunciation}]
