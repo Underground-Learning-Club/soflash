@@ -5,7 +5,9 @@
 		"target": "es2022",
 		"sourceMap": true,
 		"outDir": "../dist",
-		"resolveJsonModule": true
+		"resolveJsonModule": true,
+		"noEmit": true,
+		"allowImportingTsExtensions": true
 	},
 	"include": ["../backend"]
 }
