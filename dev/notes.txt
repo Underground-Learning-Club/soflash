@@ -2,3 +2,5 @@
 	- x react-icons
 	- .. when learn clicked, add to appData
 		- .. build AppDataManager and use it for changing name
+
+- combine two interface files into one
