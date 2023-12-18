@@ -1,6 +1,5 @@
-- .. learn and take again buttons working
-	- x react-icons
-	- .. when learn clicked, add to appData
-		- .. build AppDataManager and use it for changing name
+- .. when click take again, add time stamp to localStorage
+	- test: show timestamp
 
-- combine two interface files into one
+
+- fix: if takeAgain clicked first, then takenAgain and learned find that metadataFlashcards

@@ -10,3 +10,7 @@ export const initialMetadataFlashcard:IMetadataFlashcard = {
 	status: "learning",
 	whenMarkedAsWaiting: ''
 }
+
+export const minutesToWaitToLearnAgain = () => {
+	return 1;
+}

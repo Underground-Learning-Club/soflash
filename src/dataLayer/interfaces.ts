@@ -9,12 +9,10 @@ export interface IAppData {
 	metadataFlashcards: IMetadataFlashcard[]
 }
 
-export interface IFlashcard {
-	id: string;
+export interface IFlashcard extends IMetadataFlashcard {
 	category: string;
 	front: string;
 	back: string;
 	pronunciation: string;
 	isOpen: boolean;
-	status: "learning" | "learned" | "waiting"; 
 }

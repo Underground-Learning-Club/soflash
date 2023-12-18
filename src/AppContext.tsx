@@ -7,14 +7,17 @@ import {
 } from "./dataLayer/interfaces";
 import * as appModel from "./dataLayer/appModel";
 import * as config from "./config";
+import * as tools from "./tools";
 
 interface IAppContext {
 	flashcards: IFlashcard[];
 	handleToggleFlashcard: (flashcard: IFlashcard) => void;
 	appData: IAppData;
 	handleChangeUserName: (username: string) => void;
-	handleMarkedAsLearned: (flashcard: IFlashcard) => void;
+	handleMarkAsLearned: (flashcard: IFlashcard) => void;
 	handleResetApplicationData: () => void;
+	handleMarkToTakeAgain: (flashcard: IFlashcard) => void;
+	flashcardIsWaiting: (flashcard: IFlashcard) => boolean;
 }
 
 interface IAppProvider {
@@ -46,9 +49,9 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setAppData(_appData);
 	};
 
-	const handleMarkedAsLearned = (flashcard: IFlashcard) => {
+	const handleMarkAsLearned = (flashcard: IFlashcard) => {
 		const _appData = structuredClone(appData);
-		const metadataFlashcard = appData.metadataFlashcards.find(
+		const metadataFlashcard = _appData.metadataFlashcards.find(
 			(m) => m.id === flashcard.id
 		);
 		if (metadataFlashcard === undefined) {
@@ -57,6 +60,31 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 			_metadataFlashcard.id = flashcard.id;
 			_metadataFlashcard.status = "learned";
 			_appData.metadataFlashcards.push(_metadataFlashcard);
+		} else {
+			metadataFlashcard.status = "learned";
+		}
+		saveAppDataToLocalStorage(_appData);
+		setAppData(_appData);
+		setFlashcards(appModel.getFlashcards());
+	};
+
+	const handleMarkToTakeAgain = (flashcard: IFlashcard) => {
+		const _appData = structuredClone(appData);
+		const metadataFlashcard = _appData.metadataFlashcards.find(
+			(m) => m.id === flashcard.id
+		);
+		if (metadataFlashcard === undefined) {
+			const _metadataFlashcard: IMetadataFlashcard =
+				config.initialMetadataFlashcard;
+			_metadataFlashcard.id = flashcard.id;
+			_metadataFlashcard.status = "waiting";
+			_metadataFlashcard.whenMarkedAsWaiting =
+				tools.getDateAndTimeStamp();
+			_appData.metadataFlashcards.push(_metadataFlashcard);
+		} else {
+			metadataFlashcard.status = "waiting";
+			metadataFlashcard.whenMarkedAsWaiting =
+				tools.getDateAndTimeStamp();
 		}
 		saveAppDataToLocalStorage(_appData);
 		setAppData(_appData);
@@ -66,7 +94,18 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	const handleResetApplicationData = () => {
 		localStorage.clear();
 		setFlashcards(appModel.getFlashcards());
-	}
+	};
+
+	const flashcardIsWaiting = (flashcard: IFlashcard) => {
+		if (flashcard.whenMarkedAsWaiting === "") {
+			return false;
+		} else {
+			return !tools.isDateMoreThanMinutesAgo(
+				flashcard.whenMarkedAsWaiting,
+				config.minutesToWaitToLearnAgain()
+			);
+		}
+	};
 
 	return (
 		<AppContext.Provider
@@ -75,8 +114,10 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 				handleToggleFlashcard,
 				appData,
 				handleChangeUserName,
-				handleMarkedAsLearned,
+				handleMarkAsLearned,
 				handleResetApplicationData,
+				handleMarkToTakeAgain,
+				flashcardIsWaiting,
 			}}
 		>
 			{children}

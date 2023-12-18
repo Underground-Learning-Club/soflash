@@ -4,13 +4,13 @@ import { Flashcard } from "../components/Flashcard";
 import React from "react";
 
 export const PageLearn = () => {
-	const { flashcards } = useContext(AppContext);
+	const { flashcards, flashcardIsWaiting } = useContext(AppContext);
 	return (
 		<>
 			{flashcards.map((flashcard) => {
 				return (
 					<React.Fragment key={flashcard.id}>
-						{flashcard.status !== "learned" && (
+						{flashcard.status !== "learned" && !flashcardIsWaiting(flashcard) && (
 							<Flashcard
 								flashcard={flashcard}
 								key={flashcard.id}
