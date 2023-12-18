@@ -1,8 +1,11 @@
 import rawFlashcards from "../data/flashcards.json";
 import { IFlashcard } from "./interfaces";
 
+const localStorageAppData = localStorage.getItem("appData");
+console.log(localStorageAppData);
+
 export const getFlashcards = () => {
-	const flashcards:IFlashcard[] = [];
+	const flashcards: IFlashcard[] = [];
 	for (const rawFlashcard of rawFlashcards) {
 		const flashcard: IFlashcard = {
 			id: rawFlashcard.id,
@@ -10,9 +13,11 @@ export const getFlashcards = () => {
 			front: rawFlashcard.front,
 			back: rawFlashcard.back,
 			pronunciation: rawFlashcard.pronunciation,
-			isOpen: false
-		}
+			isOpen: false,
+			status: "learning",
+		};
 		flashcards.push(flashcard);
 	}
+
 	return flashcards;
-}
+};

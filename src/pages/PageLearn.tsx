@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AppContext } from "../AppContext";
 import { Flashcard } from "../components/Flashcard";
+import React from "react";
 
 export const PageLearn = () => {
 	const { flashcards } = useContext(AppContext);
@@ -8,8 +9,15 @@ export const PageLearn = () => {
 		<>
 			{flashcards.map((flashcard) => {
 				return (
-					<Flashcard flashcard={flashcard} key={flashcard.id} />
-				)
+					<React.Fragment key={flashcard.id}>
+						{flashcard.status !== "learned" && (
+							<Flashcard
+								flashcard={flashcard}
+								key={flashcard.id}
+							/>
+						)}
+					</React.Fragment>
+				);
 			})}
 		</>
 	);

@@ -1,9 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { createContext, useEffect, useState } from "react";
-import { IFlashcard } from "./dataLayer/interfaces";
+import { IAppData, IFlashcard, IMetadataFlashcard } from "./dataLayer/interfaces";
 import { getFlashcards } from "./dataLayer/appModel";
 import * as config from "./config";
-import { IAppData, IMetadataFlashcard } from "./interfaces";
 
 interface IAppContext {
 	flashcards: IFlashcard[];
