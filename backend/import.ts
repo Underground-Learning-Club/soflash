@@ -53,4 +53,4 @@ const originalFlashcards = qfil.readJsonFile('./src/data/flashcards.json');
 
 const newFlashcards = [...originalFlashcards, ...flashcards];
 
-qfil.writeJsonFile('./src/data/newfile.json', newFlashcards);
+qfil.writeJsonFile('./src/data/flashcards.json', newFlashcards);
