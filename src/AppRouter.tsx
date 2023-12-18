@@ -1,8 +1,8 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import App from "./App";
 import { Page404 } from "./pages/Page404";
-import { PageAbout } from "./pages/PageAbout";
 import { PageLearn } from "./pages/PageLearn";
+import { PageProfile } from "./pages/PageProfile";
 
 export const router = createBrowserRouter([
 	{
@@ -15,8 +15,8 @@ export const router = createBrowserRouter([
 				element: <PageLearn />,
 			},
 			{
-				path: "about",
-				element: <PageAbout />,
+				path: "profile",
+				element: <PageProfile />,
 			},
 			{
 				path: "/",
