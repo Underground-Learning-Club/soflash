@@ -53,6 +53,10 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setAppdata(_appData);
 	}
 
+	// const handleMarkedAsLearned = (id: string) => {
+
+	// }
+
 	return (
 		<AppContext.Provider
 			value={{
