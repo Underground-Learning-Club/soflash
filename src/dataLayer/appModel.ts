@@ -24,5 +24,14 @@ export const getFlashcards = () => {
 		flashcards.push(flashcard);
 	}
 
+	for (const metadataFlashcard of appData.metadataFlashcards) {
+		const flashcard = flashcards.find(m => m.id === metadataFlashcard.id);
+		if (flashcard) {
+			flashcard.status = metadataFlashcard.status;
+		}
+	}
+
+	console.log(flashcards);
+
 	return flashcards;
 };
