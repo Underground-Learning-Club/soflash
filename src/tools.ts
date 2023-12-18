@@ -6,7 +6,7 @@ export const getCategoryName = (categoryIdCode: string) => {
 			return "Polish";
 		case "fr":
 			return "French";
-		case "sp":
+		case "es":
 			return "Spanish";
 	}
 };
