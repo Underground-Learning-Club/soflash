@@ -13,7 +13,7 @@ interface IAppContext {
 	handleToggleFlashcard: (flashcard: IFlashcard) => void;
 	appData: IAppData;
 	handleChangeUserName: (username: string) => void;
-	handleMarkedAsLearned: (flashcard: IFlashcard) => void;
+	handleMarkAsLearned: (flashcard: IFlashcard) => void;
 	handleResetApplicationData: () => void;
 }
 
@@ -46,7 +46,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setAppData(_appData);
 	};
 
-	const handleMarkedAsLearned = (flashcard: IFlashcard) => {
+	const handleMarkAsLearned = (flashcard: IFlashcard) => {
 		const _appData = structuredClone(appData);
 		const metadataFlashcard = appData.metadataFlashcards.find(
 			(m) => m.id === flashcard.id
@@ -63,6 +63,23 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setFlashcards(appModel.getFlashcards());
 	};
 
+	// const handleMark = (flashcard: IFlashcard) => {
+	// 	const _appData = structuredClone(appData);
+	// 	const metadataFlashcard = appData.metadataFlashcards.find(
+	// 		(m) => m.id === flashcard.id
+	// 	);
+	// 	if (metadataFlashcard === undefined) {
+	// 		const _metadataFlashcard: IMetadataFlashcard =
+	// 			config.initialMetadataFlashcard;
+	// 		_metadataFlashcard.id = flashcard.id;
+	// 		_metadataFlashcard.status = "learned";
+	// 		_appData.metadataFlashcards.push(_metadataFlashcard);
+	// 	}
+	// 	saveAppDataToLocalStorage(_appData);
+	// 	setAppData(_appData);
+	// 	setFlashcards(appModel.getFlashcards());
+	// };
+
 	const handleResetApplicationData = () => {
 		localStorage.clear();
 		setFlashcards(appModel.getFlashcards());
@@ -75,7 +92,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 				handleToggleFlashcard,
 				appData,
 				handleChangeUserName,
-				handleMarkedAsLearned,
+				handleMarkAsLearned: handleMarkAsLearned,
 				handleResetApplicationData,
 			}}
 		>
