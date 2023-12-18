@@ -35,6 +35,5 @@ export const getDateAndTimeStamp = () => {
 export const isDateMoreThanMinutesAgo = (dateTime: string, minutes: number) => {
 	const date = dayjs(dateTime);
 	const minutesDifference = dayjs().diff(date, "minutes");
-	console.log(minutesDifference);
-	return minutesDifference > minutes;
+	return minutesDifference >= minutes;
 };

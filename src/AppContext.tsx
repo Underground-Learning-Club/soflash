@@ -51,7 +51,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 
 	const handleMarkAsLearned = (flashcard: IFlashcard) => {
 		const _appData = structuredClone(appData);
-		const metadataFlashcard = appData.metadataFlashcards.find(
+		const metadataFlashcard = _appData.metadataFlashcards.find(
 			(m) => m.id === flashcard.id
 		);
 		if (metadataFlashcard === undefined) {
@@ -60,6 +60,8 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 			_metadataFlashcard.id = flashcard.id;
 			_metadataFlashcard.status = "learned";
 			_appData.metadataFlashcards.push(_metadataFlashcard);
+		} else {
+			metadataFlashcard.status = "learned";
 		}
 		saveAppDataToLocalStorage(_appData);
 		setAppData(_appData);
@@ -68,7 +70,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 
 	const handleMarkToTakeAgain = (flashcard: IFlashcard) => {
 		const _appData = structuredClone(appData);
-		const metadataFlashcard = appData.metadataFlashcards.find(
+		const metadataFlashcard = _appData.metadataFlashcards.find(
 			(m) => m.id === flashcard.id
 		);
 		if (metadataFlashcard === undefined) {
@@ -79,6 +81,10 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 			_metadataFlashcard.whenMarkedAsWaiting =
 				tools.getDateAndTimeStamp();
 			_appData.metadataFlashcards.push(_metadataFlashcard);
+		} else {
+			metadataFlashcard.status = "waiting";
+			metadataFlashcard.whenMarkedAsWaiting =
+				tools.getDateAndTimeStamp();
 		}
 		saveAppDataToLocalStorage(_appData);
 		setAppData(_appData);
