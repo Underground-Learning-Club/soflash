@@ -17,6 +17,7 @@ interface IAppContext {
 	handleMarkAsLearned: (flashcard: IFlashcard) => void;
 	handleResetApplicationData: () => void;
 	handleMarkToTakeAgain: (flashcard: IFlashcard) => void;
+	flashcardIsWaiting: (flashcard: IFlashcard) => boolean;
 }
 
 interface IAppProvider {
@@ -89,6 +90,10 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setFlashcards(appModel.getFlashcards());
 	};
 
+	const flashcardIsWaiting = (flashcard: IFlashcard) => {
+		return false;
+	}
+
 	return (
 		<AppContext.Provider
 			value={{
@@ -99,6 +104,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 				handleMarkAsLearned,
 				handleResetApplicationData,
 				handleMarkToTakeAgain,
+				flashcardIsWaiting,
 			}}
 		>
 			{children}
