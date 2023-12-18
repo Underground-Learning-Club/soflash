@@ -1,5 +1,3 @@
-- .. when click take again, add time stamp to localStorage
-	- test: show timestamp
-
-
-- fix: if takeAgain clicked first, then takenAgain and learned find that metadataFlashcards
+- .. make CLI
+	- .. "npm run import"
+		- .. import.ts, prints out hallo 
