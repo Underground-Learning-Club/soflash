@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import { IAppData, IFlashcard, IMetadataFlashcard } from "./dataLayer/interfaces";
-import { getFlashcards } from "./dataLayer/appModel";
+import * as appModel from "./dataLayer/appModel";
 import * as config from "./config";
 
 interface IAppContext {
@@ -19,8 +19,8 @@ interface IAppProvider {
 export const AppContext = createContext<IAppContext>({} as IAppContext);
 
 export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
-	const [flashcards, setFlashcards] = useState<IFlashcard[]>(getFlashcards());
-	const [appData, setAppdata] = useState<IAppData>(config.initialAppData);
+	const [flashcards, setFlashcards] = useState<IFlashcard[]>(appModel.getFlashcards());
+	const [appData, setAppData] = useState<IAppData>(appModel.getAppData());
 
 	const handleToggleFlashcard = (flashcard: IFlashcard) => {
 		flashcard.isOpen = !flashcard.isOpen;
@@ -28,19 +28,19 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setFlashcards(_setFlashcards);
 	};
 
-	useEffect(() => {
-		let strAppData = localStorage.getItem("appData");
-		let _appData:IAppData = {} as IAppData;
-		if (strAppData === null) {
-			strAppData = JSON.stringify(config.initialAppData);
-			localStorage.setItem(
-				"appData",
-				strAppData
-			);
-		}
-		_appData = JSON.parse(strAppData);
-		setAppdata(_appData);
-	}, []);
+	// useEffect(() => {
+	// 	let strAppData = localStorage.getItem("appData");
+	// 	let _appData:IAppData = {} as IAppData;
+	// 	if (strAppData === null) {
+	// 		strAppData = JSON.stringify(config.initialAppData);
+	// 		localStorage.setItem(
+	// 			"appData",
+	// 			strAppData
+	// 		);
+	// 	}
+	// 	_appData = JSON.parse(strAppData);
+	// 	setAppdata(_appData);
+	// }, []);
 
 	const saveAppDataToLocalStorage = (_appData: IAppData) => {
 		localStorage.setItem('appData', JSON.stringify(_appData));
@@ -50,7 +50,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		const _appData = structuredClone(appData);
 		_appData.username = username;
 		saveAppDataToLocalStorage(_appData);
-		setAppdata(_appData);
+		setAppData(_appData);
 	}
 
 	const handleMarkedAsLearned = (flashcard: IFlashcard) => {
@@ -63,7 +63,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 			_appData.metadataFlashcards.push(_metadataFlashcard)
 		}
 		saveAppDataToLocalStorage(_appData);
-		setAppdata(_appData);
+		setAppData(_appData);
 	}
 
 	return (

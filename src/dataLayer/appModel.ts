@@ -7,7 +7,10 @@ const localStorageAppData = localStorage.getItem("appData");
 if (localStorageAppData !== null) {
 	appData = JSON.parse(structuredClone(localStorageAppData));
 }
-console.log(appData);
+
+export const getAppData = () => {
+	return appData;
+}
 
 export const getFlashcards = () => {
 	const flashcards: IFlashcard[] = [];
@@ -30,8 +33,6 @@ export const getFlashcards = () => {
 			flashcard.status = metadataFlashcard.status;
 		}
 	}
-
-	console.log(flashcards);
 
 	return flashcards;
 };
