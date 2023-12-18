@@ -36,6 +36,7 @@ for (const line of lines) {
 		} else {
 			processingFlashcard = false;
 			front = line;
+			linesProcessed = 0;
 
 			const flashcard = {
 				id: qstr.generateShortUUID(),
