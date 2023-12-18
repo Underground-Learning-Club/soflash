@@ -1,6 +1,6 @@
-import { IMetadataFlashcard } from "./interfaces";
+import { IAppData, IMetadataFlashcard } from "./dataLayer/interfaces";
 
-export const initialAppData = {
+export const initialAppData:IAppData = {
 	username: "Guest",
 	metadataFlashcards: []
 };

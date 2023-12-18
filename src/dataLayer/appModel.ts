@@ -1,8 +1,13 @@
 import rawFlashcards from "../data/flashcards.json";
 import { IFlashcard } from "./interfaces";
+import * as config from "../config";
 
+let appData = config.initialAppData;
 const localStorageAppData = localStorage.getItem("appData");
-console.log(localStorageAppData);
+if (localStorageAppData !== null) {
+	appData = JSON.parse(structuredClone(localStorageAppData));
+}
+console.log(appData);
 
 export const getFlashcards = () => {
 	const flashcards: IFlashcard[] = [];
