@@ -7,6 +7,7 @@ import {
 } from "./dataLayer/interfaces";
 import * as appModel from "./dataLayer/appModel";
 import * as config from "./config";
+import * as tools from "./tools";
 
 interface IAppContext {
 	flashcards: IFlashcard[];
@@ -15,6 +16,7 @@ interface IAppContext {
 	handleChangeUserName: (username: string) => void;
 	handleMarkAsLearned: (flashcard: IFlashcard) => void;
 	handleResetApplicationData: () => void;
+	handleMarkToTakeAgain: (flashcard: IFlashcard) => void;
 }
 
 interface IAppProvider {
@@ -63,27 +65,29 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setFlashcards(appModel.getFlashcards());
 	};
 
-	// const handleMark = (flashcard: IFlashcard) => {
-	// 	const _appData = structuredClone(appData);
-	// 	const metadataFlashcard = appData.metadataFlashcards.find(
-	// 		(m) => m.id === flashcard.id
-	// 	);
-	// 	if (metadataFlashcard === undefined) {
-	// 		const _metadataFlashcard: IMetadataFlashcard =
-	// 			config.initialMetadataFlashcard;
-	// 		_metadataFlashcard.id = flashcard.id;
-	// 		_metadataFlashcard.status = "learned";
-	// 		_appData.metadataFlashcards.push(_metadataFlashcard);
-	// 	}
-	// 	saveAppDataToLocalStorage(_appData);
-	// 	setAppData(_appData);
-	// 	setFlashcards(appModel.getFlashcards());
-	// };
+	const handleMarkToTakeAgain = (flashcard: IFlashcard) => {
+		const _appData = structuredClone(appData);
+		const metadataFlashcard = appData.metadataFlashcards.find(
+			(m) => m.id === flashcard.id
+		);
+		if (metadataFlashcard === undefined) {
+			const _metadataFlashcard: IMetadataFlashcard =
+				config.initialMetadataFlashcard;
+			_metadataFlashcard.id = flashcard.id;
+			_metadataFlashcard.status = "waiting";
+			_metadataFlashcard.whenMarkedAsWaiting =
+				tools.getDateAndTimeStamp();
+			_appData.metadataFlashcards.push(_metadataFlashcard);
+		}
+		saveAppDataToLocalStorage(_appData);
+		setAppData(_appData);
+		setFlashcards(appModel.getFlashcards());
+	};
 
 	const handleResetApplicationData = () => {
 		localStorage.clear();
 		setFlashcards(appModel.getFlashcards());
-	}
+	};
 
 	return (
 		<AppContext.Provider
@@ -92,8 +96,9 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 				handleToggleFlashcard,
 				appData,
 				handleChangeUserName,
-				handleMarkAsLearned: handleMarkAsLearned,
+				handleMarkAsLearned,
 				handleResetApplicationData,
+				handleMarkToTakeAgain,
 			}}
 		>
 			{children}
