@@ -10,7 +10,7 @@ interface IProps {
 }
 
 export const Flashcard = ({ flashcard }: IProps) => {
-	const { handleToggleFlashcard, handleMarkedLearned } = useContext(AppContext);
+	const { handleToggleFlashcard, handleMarkAsLearned } = useContext(AppContext);
 	return (
 		<div>
 			<div
@@ -37,7 +37,7 @@ export const Flashcard = ({ flashcard }: IProps) => {
 						)}
 					</div>
 					<div className="mt-1 flex justify-between">
-						<button onClick={() => handleMarkedLearned(flashcard)} className="bg-green-500 py-1 px-2 rounded flex gap-1 shadow-3 shadow-gray-500"><p>Learned</p><FaRegThumbsUp className="mt-1" /></button>
+						<button onClick={() => handleMarkAsLearned(flashcard)} className="bg-green-500 py-1 px-2 rounded flex gap-1 shadow-3 shadow-gray-500"><p>Learned</p><FaRegThumbsUp className="mt-1" /></button>
 						<button className="bg-blue-500 py-1 px-2 rounded flex gap-1"><FaHourglassHalf className="mt-1" /><p>Take Again</p></button>
 					</div>
 				</>
