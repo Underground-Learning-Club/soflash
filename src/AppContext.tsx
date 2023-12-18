@@ -28,20 +28,6 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		setFlashcards(_setFlashcards);
 	};
 
-	// useEffect(() => {
-	// 	let strAppData = localStorage.getItem("appData");
-	// 	let _appData:IAppData = {} as IAppData;
-	// 	if (strAppData === null) {
-	// 		strAppData = JSON.stringify(config.initialAppData);
-	// 		localStorage.setItem(
-	// 			"appData",
-	// 			strAppData
-	// 		);
-	// 	}
-	// 	_appData = JSON.parse(strAppData);
-	// 	setAppdata(_appData);
-	// }, []);
-
 	const saveAppDataToLocalStorage = (_appData: IAppData) => {
 		localStorage.setItem('appData', JSON.stringify(_appData));
 	}
@@ -64,6 +50,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		}
 		saveAppDataToLocalStorage(_appData);
 		setAppData(_appData);
+		setFlashcards(appModel.getFlashcards());
 	}
 
 	return (
