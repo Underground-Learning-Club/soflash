@@ -23,6 +23,7 @@ export const getFlashcards = () => {
 			pronunciation: rawFlashcard.pronunciation,
 			isOpen: false,
 			status: "learning",
+			whenMarkedAsWaiting: ""
 		};
 		flashcards.push(flashcard);
 	}
@@ -31,8 +32,10 @@ export const getFlashcards = () => {
 		const flashcard = flashcards.find((m) => m.id === metadataFlashcard.id);
 		if (flashcard) {
 			flashcard.status = metadataFlashcard.status;
+			flashcard.whenMarkedAsWaiting = metadataFlashcard.whenMarkedAsWaiting;
 		}
 	}
+	console.log(flashcards);
 
 	return flashcards;
 };

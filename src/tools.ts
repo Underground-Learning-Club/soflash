@@ -1,3 +1,5 @@
+import dayjs from "dayjs";
+
 export const getCategoryName = (categoryIdCode: string) => {
 	switch (categoryIdCode) {
 		case "pl":
@@ -28,4 +30,11 @@ export const getDateAndTimeStamp = () => {
 	const dateTimeString = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
 
 	return dateTimeString;
+};
+
+export const isDateMoreThanMinutesAgo = (dateTime: string, minutes: number) => {
+	const date = dayjs(dateTime);
+	const minutesDifference = dayjs().diff(date, "minutes");
+	console.log(minutesDifference);
+	return minutesDifference > minutes;
 };

@@ -91,8 +91,15 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 	};
 
 	const flashcardIsWaiting = (flashcard: IFlashcard) => {
-		return false;
-	}
+		if (flashcard.whenMarkedAsWaiting === "") {
+			return false;
+		} else {
+			return !tools.isDateMoreThanMinutesAgo(
+				flashcard.whenMarkedAsWaiting,
+				config.minutesToWaitToLearnAgain()
+			);
+		}
+	};
 
 	return (
 		<AppContext.Provider
