@@ -93,6 +93,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 
 	const handleResetApplicationData = () => {
 		localStorage.clear();
+		setAppData(config.initialAppData);
 		setFlashcards(appModel.getFlashcards());
 	};
 

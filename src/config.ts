@@ -12,5 +12,5 @@ export const initialMetadataFlashcard:IMetadataFlashcard = {
 }
 
 export const minutesToWaitToLearnAgain = () => {
-	return 1;
+	return 30;
 }
