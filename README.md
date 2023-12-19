@@ -16,7 +16,7 @@ It is social in the sense that users are notified of the flashcards that others 
 
 ## project board
 
-- find tasks here: https://github.com/orgs/Underground-Learning-Club/projects/6/views/6
+- find tasks here: [https://github.com/orgs/Underground-Learning-Club/projects/6/views/6](https://github.com/orgs/Underground-Learning-Club/projects/6/views/6?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C%22Labels%22%5D)
 
 ## general plan
 
