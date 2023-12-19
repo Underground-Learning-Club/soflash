@@ -26,6 +26,11 @@ for (const line of lines) {
 		continue;
 	}
 
+	if (line === "//linux") {
+		category = "linux";
+		continue;
+	}
+
 	if (line === "") {
 		processingFlashcard = false;
 	} else {
