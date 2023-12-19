@@ -26,16 +26,21 @@ for (const line of lines) {
 		continue;
 	}
 
+	if (line === "//linux") {
+		category = "linux";
+		continue;
+	}
+
 	if (line === "") {
 		processingFlashcard = false;
 	} else {
 		if (linesProcessed === 0) {
 			processingFlashcard = true;
-			back = line;
+			front = line;
 			linesProcessed++;
 		} else {
 			processingFlashcard = false;
-			front = line;
+			back = line;
 			linesProcessed = 0;
 
 			const flashcard = {

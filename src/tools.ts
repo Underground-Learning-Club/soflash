@@ -1,4 +1,5 @@
 import dayjs from "dayjs";
+import * as tools from './tools';
 
 export const getCategoryName = (categoryIdCode: string) => {
 	switch (categoryIdCode) {
@@ -8,6 +9,8 @@ export const getCategoryName = (categoryIdCode: string) => {
 			return "French";
 		case "es":
 			return "Spanish";
+		default:
+			return tools.capitalizeFirstLetter(categoryIdCode); // linux --> Linux
 	}
 };
 
@@ -37,3 +40,7 @@ export const isDateMoreThanMinutesAgo = (dateTime: string, minutes: number) => {
 	const minutesDifference = dayjs().diff(date, "minutes");
 	return minutesDifference >= minutes;
 };
+
+export const capitalizeFirstLetter = (text: string) => {
+	return text[0].toUpperCase() + text.slice(1);
+}

@@ -159,5 +159,12 @@
     "front": "We're ready.",
     "back": "Jesteśmy gotowi.",
     "pronunciation": ""
+  },
+  {
+    "id": "MdbiXQ",
+    "category": "linux",
+    "front": "what commands do you have to run before you install software with `apt-get`",
+    "back": "`sudo apt-get update` and `sudo apt-get upgrade`",
+    "pronunciation": ""
   }
 ]
