@@ -166,5 +166,12 @@
     "front": "what commands do you have to run before you install software with `apt-get`",
     "back": "`sudo apt-get update` and `sudo apt-get upgrade`",
     "pronunciation": ""
+  },
+  {
+    "id": "ZBefYN",
+    "category": "pl",
+    "front": "I want to learn more Polish.",
+    "back": "Chcę nauczyć się więcej języka polskiego.",
+    "pronunciation": "tSEH sheh vee-EN-SAY YEHsika"
   }
 ]

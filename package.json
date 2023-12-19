@@ -11,7 +11,7 @@
 		"pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\"",
 		"sc": "git log --pretty=format:\"%h - %ad - %s (%an)\" -10 --date=format:\"%Y-%m-%d %H:%M:%S\"",
 		"sca": "git log --pretty=format:\"%h - %ad - %s (%an)\" --date=format:\"%Y-%m-%d %H:%M:%S\"",
-		"import": "npx tsx backend/import.ts"
+		"import": "tsx backend/import.ts"
 	},
 	"dependencies": {
 		"@types/node": "^20.10.5",

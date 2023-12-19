@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import * as qfil from "./qtools/qfil.ts";
-import * as qstr from "./qtools/qstr.ts";
+import * as qfil from "./qtools/qfil.js";
+import * as qstr from "./qtools/qstr.js";
 
 const importContent = qfil.getTextFromFile("./dev/raw-flashcards.txt");
 const lines = qstr.convertStringBlockToLines(importContent);
@@ -58,5 +58,4 @@ for (const line of lines) {
 const originalFlashcards = qfil.readJsonFile('./src/data/flashcards.json');
 
 const newFlashcards = [...originalFlashcards, ...flashcards];
-
 qfil.writeJsonFile('./src/data/flashcards.json', newFlashcards);
