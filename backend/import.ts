@@ -31,11 +31,11 @@ for (const line of lines) {
 	} else {
 		if (linesProcessed === 0) {
 			processingFlashcard = true;
-			back = line;
+			front = line;
 			linesProcessed++;
 		} else {
 			processingFlashcard = false;
-			front = line;
+			back = line;
 			linesProcessed = 0;
 
 			const flashcard = {
