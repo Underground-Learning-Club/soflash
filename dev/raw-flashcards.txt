@@ -1,4 +1,1 @@
-//linux
 
-what commands do you have to run before you install software with `apt-get`
-`sudo apt-get update` and `sudo apt-get upgrade`
