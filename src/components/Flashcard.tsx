@@ -10,6 +10,10 @@ interface IProps {
 	flashcard: IFlashcard;
 }
 
+const handleOpenGoogleTranslate = (flashcard: IFlashcard) => {
+	alert(flashcard.back);
+}
+
 export const Flashcard = ({ flashcard }: IProps) => {
 	const {
 		handleToggleFlashcard,
@@ -43,7 +47,7 @@ export const Flashcard = ({ flashcard }: IProps) => {
 							)}
 						</div>
 						<div>
-						<RxSpeakerLoud className="text-3xl" />
+						<RxSpeakerLoud onClick={() => handleOpenGoogleTranslate(flashcard)} className="text-3xl cursor-pointer" />
 						</div>
 					</div>
 					<div className="mt-1 flex justify-between">
