@@ -173,5 +173,26 @@
     "front": "I want to learn more Polish.",
     "back": "Chcę nauczyć się więcej języka polskiego.",
     "pronunciation": "tSEH sheh vee-EN-SAY YEHsika"
+  },
+  {
+    "id": "XSC2r0",
+    "category": "fr",
+    "front": "quote: everything has already been said, but since no one listens, we always have to start again",
+    "back": "\"Toutes chose sont dites déjà, mais comme personne n'écoute, il faut toujours recommencer.\" - André Gide",
+    "pronunciation": ""
+  },
+  {
+    "id": "NPiWsT",
+    "category": "fr",
+    "front": "as fast as him",
+    "back": "aussi vite que lui",
+    "pronunciation": ""
+  },
+  {
+    "id": "0KfvwU",
+    "category": "fr",
+    "front": "a small success",
+    "back": "un petit succès",
+    "pronunciation": ""
   }
 ]

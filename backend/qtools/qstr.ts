@@ -1,5 +1,5 @@
-import * as qsys from "./qsys.ts";
-import * as qstr from "./qstr.ts";
+import * as qsys from "./qsys.js";
+import * as qstr from "./qstr.js";
 
 /**
  * Replace all occurances in a string:

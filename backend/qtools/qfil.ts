@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import fs from "fs";
-import * as qstr from "./qstr.ts";
-import * as qfil from "./qfil.ts";
+import * as qstr from "./qstr.js";
+import * as qfil from "./qfil.js";
 
 /**
  * Creates a file with content
