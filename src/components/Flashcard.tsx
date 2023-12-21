@@ -10,16 +10,17 @@ interface IProps {
 	flashcard: IFlashcard;
 }
 
-const handleOpenGoogleTranslate = (flashcard: IFlashcard) => {
-	alert(flashcard.back);
-}
-
 export const Flashcard = ({ flashcard }: IProps) => {
 	const {
 		handleToggleFlashcard,
 		handleMarkAsLearned,
 		handleMarkToTakeAgain,
 	} = useContext(AppContext);
+
+	const handleOpenGoogleTranslate = (flashcard: IFlashcard) => {
+		window.open(`https://translate.google.com/?sl=pl&tl=de&text=${flashcard.back}&op=translate`, '_blank');
+	};
+
 	return (
 		<div>
 			<div
@@ -47,7 +48,12 @@ export const Flashcard = ({ flashcard }: IProps) => {
 							)}
 						</div>
 						<div>
-						<RxSpeakerLoud onClick={() => handleOpenGoogleTranslate(flashcard)} className="text-3xl cursor-pointer" />
+							<RxSpeakerLoud
+								onClick={() =>
+									handleOpenGoogleTranslate(flashcard)
+								}
+								className="text-3xl cursor-pointer"
+							/>
 						</div>
 					</div>
 					<div className="mt-1 flex justify-between">

@@ -1,4 +1,5 @@
 - .. audio to google translate
 	- x audio icon in
 	- x when click, alert test
-	- 
+	- .. when click, goto url
+	- .. open new tab with google translate and text
