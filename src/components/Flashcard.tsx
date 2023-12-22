@@ -18,7 +18,10 @@ export const Flashcard = ({ flashcard }: IProps) => {
 	} = useContext(AppContext);
 
 	const handleOpenGoogleTranslate = (flashcard: IFlashcard) => {
-		window.open(`https://translate.google.com/?sl=pl&tl=de&text=${flashcard.back}&op=translate`, '_blank');
+		window.open(
+			`https://translate.google.com/?sl=${flashcard.category}&tl=en&text=${flashcard.back}&op=translate`,
+			"_blank"
+		);
 	};
 
 	return (
@@ -48,12 +51,14 @@ export const Flashcard = ({ flashcard }: IProps) => {
 							)}
 						</div>
 						<div>
-							<RxSpeakerLoud
-								onClick={() =>
-									handleOpenGoogleTranslate(flashcard)
-								}
-								className="text-3xl cursor-pointer"
-							/>
+							{flashcard.isLanguage && (
+								<RxSpeakerLoud
+									onClick={() =>
+										handleOpenGoogleTranslate(flashcard)
+									}
+									className="text-3xl cursor-pointer"
+								/>
+							)}
 						</div>
 					</div>
 					<div className="mt-1 flex justify-between">
