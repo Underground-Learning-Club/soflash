@@ -25,6 +25,10 @@ export const Flashcard = ({ flashcard }: IProps) => {
 		);
 	};
 
+	const handleSliderChange = (num: number) => {
+		console.log(num);
+	};
+
 	return (
 		<div>
 			<div
@@ -79,7 +83,13 @@ export const Flashcard = ({ flashcard }: IProps) => {
 						</button>
 					</div>
 					<div className="rankSlider">
-						<FlashcardSlider defaultValue={[flashcard.rank]} min={0} max={5} step={.01}/>
+						<FlashcardSlider
+							defaultValue={[flashcard.rank]}
+							onValueChange={([i]) => handleSliderChange(i)}
+							min={0}
+							max={5}
+							step={0.01}
+						/>
 					</div>
 				</>
 			)}

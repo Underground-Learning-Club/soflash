@@ -38,7 +38,6 @@ export const getFlashcards = () => {
 			flashcard.rank = metadataFlashcard.rank ? metadataFlashcard.rank : config.defaultRank()
 		}
 	}
-	console.log(flashcards);
 
 	return flashcards;
 };
