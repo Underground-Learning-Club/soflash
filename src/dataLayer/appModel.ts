@@ -23,7 +23,8 @@ export const getFlashcards = () => {
 			pronunciation: rawFlashcard.pronunciation,
 			isOpen: false,
 			status: "learning",
-			whenMarkedAsWaiting: ""
+			whenMarkedAsWaiting: "",
+			isLanguage: config.acceptedLanguages().includes(rawFlashcard.category)
 		};
 		flashcards.push(flashcard);
 	}

@@ -1,5 +1,8 @@
 - .. audio to google translate
 	- x audio icon in
 	- x when click, alert test
-	- .. when click, goto url
-	- .. open new tab with google translate and text
+	- x when click, goto url
+	- x open new tab with google translate and text
+	- x fix polish bug
+	- x fix linux bug
+	- .. put in config

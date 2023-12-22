@@ -14,3 +14,7 @@ export const initialMetadataFlashcard:IMetadataFlashcard = {
 export const minutesToWaitToLearnAgain = () => {
 	return 30;
 }
+
+export const acceptedLanguages = () => {
+	return ['pl', 'fr', 'es'];
+}
