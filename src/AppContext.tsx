@@ -18,6 +18,7 @@ interface IAppContext {
 	handleResetApplicationData: () => void;
 	handleMarkToTakeAgain: (flashcard: IFlashcard) => void;
 	flashcardIsWaiting: (flashcard: IFlashcard) => boolean;
+	handleChangeRank: (flashcard: IFlashcard, rank: number) => void;
 }
 
 interface IAppProvider {
@@ -108,6 +109,25 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		}
 	};
 
+	const handleChangeRank = (flashcard: IFlashcard, rank: number) => {
+		const _appData = structuredClone(appData);
+		const metadataFlashcard = _appData.metadataFlashcards.find(
+			(m) => m.id === flashcard.id
+		);
+		if (metadataFlashcard === undefined) {
+			const _metadataFlashcard: IMetadataFlashcard =
+				config.initialMetadataFlashcard;
+			_metadataFlashcard.id = flashcard.id;
+			_metadataFlashcard.rank = rank;
+			_appData.metadataFlashcards.push(_metadataFlashcard);
+		} else {
+			metadataFlashcard.rank = rank;
+		}
+		saveAppDataToLocalStorage(_appData);
+		setAppData(_appData);
+		setFlashcards(appModel.getFlashcards());
+	}
+	
 	return (
 		<AppContext.Provider
 			value={{
@@ -119,6 +139,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 				handleResetApplicationData,
 				handleMarkToTakeAgain,
 				flashcardIsWaiting,
+				handleChangeRank
 			}}
 		>
 			{children}

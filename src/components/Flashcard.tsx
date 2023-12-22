@@ -16,6 +16,7 @@ export const Flashcard = ({ flashcard }: IProps) => {
 		handleToggleFlashcard,
 		handleMarkAsLearned,
 		handleMarkToTakeAgain,
+		handleChangeRank
 	} = useContext(AppContext);
 
 	const handleOpenGoogleTranslate = (flashcard: IFlashcard) => {
@@ -25,8 +26,8 @@ export const Flashcard = ({ flashcard }: IProps) => {
 		);
 	};
 
-	const handleSliderChange = (num: number) => {
-		console.log(num);
+	const handleSliderChange = (flashcard: IFlashcard, rank: number) => {
+		handleChangeRank(flashcard,rank)
 	};
 
 	return (
@@ -85,7 +86,7 @@ export const Flashcard = ({ flashcard }: IProps) => {
 					<div className="rankSlider">
 						<FlashcardSlider
 							defaultValue={[flashcard.rank]}
-							onValueChange={([i]) => handleSliderChange(i)}
+							onValueCommit={([i]) => handleSliderChange(flashcard, i)}
 							min={0}
 							max={5}
 							step={0.01}

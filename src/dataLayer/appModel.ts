@@ -39,5 +39,6 @@ export const getFlashcards = () => {
 		}
 	}
 
+	flashcards.sort((a: IFlashcard, b: IFlashcard) => a.rank < b.rank ? 1 : -1);
 	return flashcards;
 };

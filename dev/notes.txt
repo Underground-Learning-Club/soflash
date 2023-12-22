@@ -1,4 +1,5 @@
 - .. Task: implement rank in Flashcard
 	- x add rank:number to interface
 	- x show under flashcard
-	- .. show as slider
+	- x show as slider
+	- .. show flashcards in rank order
