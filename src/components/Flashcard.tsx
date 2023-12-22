@@ -5,6 +5,7 @@ import * as tools from "../tools";
 import { FaRegThumbsUp } from "react-icons/fa6";
 import { FaHourglassHalf } from "react-icons/fa";
 import { RxSpeakerLoud } from "react-icons/rx";
+import { Slider as FlashcardSlider } from "./ui/flashcardSlider";
 
 interface IProps {
 	flashcard: IFlashcard;
@@ -78,7 +79,7 @@ export const Flashcard = ({ flashcard }: IProps) => {
 						</button>
 					</div>
 					<div className="rankSlider">
-						{flashcard.rank}
+						<FlashcardSlider defaultValue={[flashcard.rank]} min={0} max={5} step={.01}/>
 					</div>
 				</>
 			)}
