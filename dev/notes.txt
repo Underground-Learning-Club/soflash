@@ -1,8 +1,5 @@
-- .. audio to google translate
-	- x audio icon in
-	- x when click, alert test
-	- x when click, goto url
-	- x open new tab with google translate and text
-	- x fix polish bug
-	- x fix linux bug
-	- .. put in config
+- .. Task: implement rank in Flashcard
+	- x add rank:number to interface
+	- x show under flashcard
+	- x show as slider
+	- .. show flashcards in rank order

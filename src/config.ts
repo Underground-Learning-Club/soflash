@@ -1,14 +1,20 @@
 import { IAppData, IMetadataFlashcard } from "./dataLayer/interfaces";
+import * as config from './config';
 
 export const initialAppData:IAppData = {
 	username: "Guest",
 	metadataFlashcards: []
 };
 
+export const defaultRank = () => {
+	return 2.5;
+}
+
 export const initialMetadataFlashcard:IMetadataFlashcard = {
 	id: '',
 	status: "learning",
-	whenMarkedAsWaiting: ''
+	whenMarkedAsWaiting: '',
+	rank: config.defaultRank()
 }
 
 export const minutesToWaitToLearnAgain = () => {

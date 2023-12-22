@@ -24,7 +24,8 @@ export const getFlashcards = () => {
 			isOpen: false,
 			status: "learning",
 			whenMarkedAsWaiting: "",
-			isLanguage: config.acceptedLanguages().includes(rawFlashcard.category)
+			isLanguage: config.acceptedLanguages().includes(rawFlashcard.category),
+			rank: config.defaultRank()
 		};
 		flashcards.push(flashcard);
 	}
@@ -34,9 +35,10 @@ export const getFlashcards = () => {
 		if (flashcard) {
 			flashcard.status = metadataFlashcard.status;
 			flashcard.whenMarkedAsWaiting = metadataFlashcard.whenMarkedAsWaiting;
+			flashcard.rank = metadataFlashcard.rank ? metadataFlashcard.rank : config.defaultRank()
 		}
 	}
-	console.log(flashcards);
 
+	flashcards.sort((a: IFlashcard, b: IFlashcard) => a.rank < b.rank ? 1 : -1);
 	return flashcards;
 };

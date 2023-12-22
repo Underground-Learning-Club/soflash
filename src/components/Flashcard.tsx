@@ -5,6 +5,7 @@ import * as tools from "../tools";
 import { FaRegThumbsUp } from "react-icons/fa6";
 import { FaHourglassHalf } from "react-icons/fa";
 import { RxSpeakerLoud } from "react-icons/rx";
+import { Slider as FlashcardSlider } from "./ui/flashcardSlider";
 
 interface IProps {
 	flashcard: IFlashcard;
@@ -15,6 +16,7 @@ export const Flashcard = ({ flashcard }: IProps) => {
 		handleToggleFlashcard,
 		handleMarkAsLearned,
 		handleMarkToTakeAgain,
+		handleChangeRank
 	} = useContext(AppContext);
 
 	const handleOpenGoogleTranslate = (flashcard: IFlashcard) => {
@@ -22,6 +24,10 @@ export const Flashcard = ({ flashcard }: IProps) => {
 			`https://translate.google.com/?sl=${flashcard.category}&tl=en&text=${flashcard.back}&op=translate`,
 			"_blank"
 		);
+	};
+
+	const handleSliderChange = (flashcard: IFlashcard, rank: number) => {
+		handleChangeRank(flashcard,rank)
 	};
 
 	return (
@@ -39,7 +45,7 @@ export const Flashcard = ({ flashcard }: IProps) => {
 			</div>
 			{flashcard.isOpen && (
 				<>
-					<div className="bg-orange-300 p-3 rounded-b-lg flex justify-between gap-1">
+					<div className="backArea bg-orange-300 p-3 rounded-b-lg flex justify-between gap-1">
 						<div>
 							<p className="text-xl italic text-black font-semibold">
 								{flashcard.back}
@@ -61,7 +67,7 @@ export const Flashcard = ({ flashcard }: IProps) => {
 							)}
 						</div>
 					</div>
-					<div className="mt-1 flex justify-between">
+					<div className="buttonArea mt-1 flex justify-between">
 						<button
 							onClick={() => handleMarkAsLearned(flashcard)}
 							className="bg-green-500 py-1 px-2 rounded flex gap-1 shadow-3 shadow-gray-500"
@@ -76,6 +82,15 @@ export const Flashcard = ({ flashcard }: IProps) => {
 							<FaHourglassHalf className="mt-1" />
 							<p>Take Again</p>
 						</button>
+					</div>
+					<div className="rankSlider">
+						<FlashcardSlider
+							defaultValue={[flashcard.rank]}
+							onValueCommit={([i]) => handleSliderChange(flashcard, i)}
+							min={0}
+							max={5}
+							step={0.01}
+						/>
 					</div>
 				</>
 			)}

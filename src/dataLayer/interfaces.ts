@@ -2,6 +2,7 @@ export interface IMetadataFlashcard {
 	id: string;
 	status: "learning" | "learned" | "waiting";
 	whenMarkedAsWaiting: string;
+	rank: number;
 }
 
 export interface IAppData {
