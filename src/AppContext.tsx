@@ -125,7 +125,7 @@ export const AppProvider: React.FC<IAppProvider> = ({ children }) => {
 		}
 		saveAppDataToLocalStorage(_appData);
 		setAppData(_appData);
-		setFlashcards(appModel.getFlashcards());
+		// setFlashcards(appModel.getFlashcards()); // we don't refresh so that the flashcard doesn't jump to another location when rank changes, only after a reload 
 	}
 	
 	return (
