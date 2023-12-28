@@ -3,12 +3,14 @@ import * as tools from './tools';
 
 export const getCategoryName = (categoryIdCode: string) => {
 	switch (categoryIdCode) {
-		case "pl":
-			return "Polish";
 		case "fr":
 			return "French";
 		case "es":
 			return "Spanish";
+		case "pl":
+			return "Polish";
+		case "da":
+			return "Danish";
 		default:
 			return tools.capitalizeFirstLetter(categoryIdCode); // linux --> Linux
 	}

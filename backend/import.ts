@@ -25,7 +25,10 @@ for (const line of lines) {
 		category = "pl";
 		continue;
 	}
-
+	if (line === "//danish") {
+		category = "da";
+		continue;
+	}
 	if (line === "//linux") {
 		category = "linux";
 		continue;

@@ -201,5 +201,103 @@
     "front": "the house",
     "back": "la maison",
     "pronunciation": ""
-  }
+  },
+  {
+	"id": "vIyTSj",
+	"category": "da",
+	"front": "What is that called?",
+	"back": "Hvad hedder det?",
+	"pronunciation": "veLL hiTHa TEE"
+},
+{
+	"id": "vjWVnS",
+	"category": "da",
+	"front": "Hello, my name is Edward",
+	"back": "Goddag, jeg hedder Edward",
+	"pronunciation": "goo-DAY JIGH-hiTHa Edward"
+},
+{
+	"id": "dHb16B",
+	"category": "da",
+	"front": "No, I am from America, but I live in Berlin.",
+	"back": "Nej, jeg er fra America, men jeg bor i Berlin.",
+	"pronunciation": "NIGH, jai eh fra America, men jigh BOR ee Berlin"
+},
+{
+	"id": "hoX83B",
+	"category": "da",
+	"front": "Good evening, Sara.",
+	"back": "God aften, Sara.",
+	"pronunciation": "go-AFFdn"
+},
+{
+	"id": "Uy0GNx",
+	"category": "da",
+	"front": "I'm learning Danish.",
+	"back": "jeg laerer dansk.",
+	"pronunciation": "jai lehrer densk"
+},
+{
+	"id": "fJthfx",
+	"category": "da",
+	"front": "It is easy to read and write Danish, but it is hard to pronounce Danish correctly.",
+	"back": "Det er let at laese og skrive dansk, men det er svaert at udtale dansk korrekt.",
+	"pronunciation": "day er lit o layze o skreeva densk, meh day er svairt o oo-TAY-leh densk korrekt"
+},
+{
+	"id": "bJnx7Z",
+	"category": "da",
+	"front": "Hi Sara, how are you doing? / Good, thanks.",
+	"back": "Dav Sara, hvordan har du det? / Fint, tak.",
+	"pronunciation": "dah-ow sara, vah-denn HAH doo day"
+},
+{
+	"id": "ukhTcr",
+	"category": "da",
+	"front": "Two beers, please.",
+	"back": "To øl, tak.",
+	"pronunciation": "toh öl tahk"
+},
+{
+	"id": "gQj8AA",
+	"category": "da",
+	"front": "I don't understand.",
+	"back": "Undskyld., jeg forstår det ikke.",
+	"pronunciation": "OON-skool, ya foh-stow DAY eeg"
+},
+{
+	"id": "vnGFq5",
+	"category": "da",
+	"front": "I am a smart guy.",
+	"back": "Jeg er en smart fyr.",
+	"pronunciation": "yay er ain smart für"
+},
+{
+	"id": "suCsyL",
+	"category": "da",
+	"front": "Good morning, Sara.",
+	"back": "God morgen, Sara.",
+	"pronunciation": "go mourn, Sara"
+},
+{
+	"id": "UDq0JD",
+	"category": "da",
+	"front": "I'm doing fine, thank you.",
+	"back": "Jeg har det godt, tak.",
+	"pronunciation": "YIGH har de GAWD, tahk."
+},
+{
+	"id": "K6NOdt",
+	"category": "da",
+	"front": "Wonderful",
+	"back": "Glimrende",
+	"pronunciation": "GLEEM-en-nah"
+},
+{
+	"id": "Sq8KsR",
+	"category": "da",
+	"front": "Auf wiedersehen",
+	"back": "Farvel",
+	"pronunciation": "far-VELL"
+}
 ]
