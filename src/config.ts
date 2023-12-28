@@ -22,5 +22,5 @@ export const minutesToWaitToLearnAgain = () => {
 }
 
 export const acceptedLanguages = () => {
-	return ['pl', 'fr', 'es'];
+	return ['pl', 'fr', 'es', 'da'];
 }
