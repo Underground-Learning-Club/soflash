@@ -3,6 +3,7 @@ import App from "./App";
 import { Page404 } from "./pages/Page404";
 import { PageLearn } from "./pages/PageLearn";
 import { PageProfile } from "./pages/PageProfile";
+import { PageAdd } from "./pages/PageAdd";
 
 export const router = createBrowserRouter([
 	{
@@ -17,6 +18,10 @@ export const router = createBrowserRouter([
 			{
 				path: "profile",
 				element: <PageProfile />,
+			},
+			{
+				path: "add",
+				element: <PageAdd />,
 			},
 			{
 				path: "/",

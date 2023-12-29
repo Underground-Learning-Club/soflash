@@ -1,6 +1,6 @@
-- .. Task: image flashcards
-	- .. get image link off back text
-
-
-
-- Task: Tatoeba links in
+- Task: image flashcards
+	- x get image link off back text
+- .. Task: Tatoeba links in
+	- .. create "Add" page
+	- list according to rank all flashcard backs
+	- make hyperlink out of each word to Tatoeba
