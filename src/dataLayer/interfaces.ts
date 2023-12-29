@@ -18,4 +18,5 @@ export interface IFlashcard extends IMetadataFlashcard {
 	isOpen: boolean;
 	isLanguage: boolean;
 	imageIdCode: string;
+	tatoebaLanguageIdCode: string;
 }

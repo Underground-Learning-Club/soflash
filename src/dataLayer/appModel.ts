@@ -25,6 +25,22 @@ const parseFlashcardBack = (rawBack: string): string[] => {
 
 }
 
+const getTatoebaLanguageIdCode = (category: string): string => {
+	console.log(category);
+	switch (category) {
+		case 'pl':
+			return 'pol';
+		case 'fr':
+			return 'fra';
+		case 'es':
+			return 'spa';
+		case 'da':
+			return 'dan';
+		default:
+			return 'nnn';
+	}
+}
+
 export const getFlashcards = () => {
 	const appData = getAppData();
 	const flashcards: IFlashcard[] = [];
@@ -41,7 +57,8 @@ export const getFlashcards = () => {
 			whenMarkedAsWaiting: "",
 			isLanguage: config.acceptedLanguages().includes(rawFlashcard.category),
 			rank: config.defaultRank(),
-			imageIdCode
+			imageIdCode,
+			tatoebaLanguageIdCode: getTatoebaLanguageIdCode(rawFlashcard.category)
 		};
 		flashcards.push(flashcard);
 	}
