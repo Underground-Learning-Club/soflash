@@ -56,7 +56,7 @@ export const Flashcard = ({ flashcard }: IProps) => {
 								</p>
 							)}
 							{flashcard.imageIdCode && (
-								<span>image: imageIdCode</span>
+								<img className="mt-3" src={`images/flashcards/${flashcard.imageIdCode}.png`}/>
 							)}
 						</div>
 						<div>
