@@ -17,4 +17,5 @@ export interface IFlashcard extends IMetadataFlashcard {
 	pronunciation: string;
 	isOpen: boolean;
 	isLanguage: boolean;
+	imageIdCode: string;
 }

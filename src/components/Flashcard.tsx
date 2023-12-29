@@ -55,6 +55,9 @@ export const Flashcard = ({ flashcard }: IProps) => {
 									[{flashcard.pronunciation}]
 								</p>
 							)}
+							{flashcard.imageIdCode && (
+								<span>image: imageIdCode</span>
+							)}
 						</div>
 						<div>
 							{flashcard.isLanguage && (

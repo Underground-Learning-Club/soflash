@@ -11,21 +11,30 @@ export const getAppData = () => {
 	return appData;
 };
 
+const parseFlashcardBack = (rawBack: string): string[] => {
+	const back = 'bbb';
+	const imageIdCode = 'iii';
+	return [back, imageIdCode];
+
+}
+
 export const getFlashcards = () => {
 	const appData = getAppData();
 	const flashcards: IFlashcard[] = [];
 	for (const rawFlashcard of rawFlashcards) {
+		const [back, imageIdCode] = parseFlashcardBack(rawFlashcard.back);
 		const flashcard: IFlashcard = {
 			id: rawFlashcard.id,
 			category: rawFlashcard.category,
 			front: rawFlashcard.front,
-			back: rawFlashcard.back,
+			back,
 			pronunciation: rawFlashcard.pronunciation,
 			isOpen: false,
 			status: "learning",
 			whenMarkedAsWaiting: "",
 			isLanguage: config.acceptedLanguages().includes(rawFlashcard.category),
-			rank: config.defaultRank()
+			rank: config.defaultRank(),
+			imageIdCode
 		};
 		flashcards.push(flashcard);
 	}
