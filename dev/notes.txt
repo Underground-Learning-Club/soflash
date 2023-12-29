@@ -1,5 +1,6 @@
-- .. Task: implement rank in Flashcard
-	- x add rank:number to interface
-	- x show under flashcard
-	- x show as slider
-	- .. show flashcards in rank order
+- .. Task: image flashcards
+	- .. get image link off back text
+
+
+
+- Task: Tatoeba links in

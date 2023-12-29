@@ -301,28 +301,28 @@
 	"pronunciation": "far-VELL"
 },
 {
-	"suuid": "JMWFjk",
+	"id": "JMWFjk",
 	"category": "denmark",
 	"front": "name the 10 largest islands",
 	"back": "1. Zealand (Sjælland [zay-LENN]), 2. Vendsyssel-Thy [VENN-sissell-TSEE], 3. Funen (Fyn [feen]), 4. Lolland [loll-LEN], 5. Bornholm [bon-HOLM], 6. Falster [FEL-stah], 7. Langeland [LONG-eh-lan], 8. Mors [mors], 9. Als [els], 10. Amager [ah-mah]@@largestIslands",
 	"pronunciation": ""
 },
 {
-	"suuid": "eHbZqY",
+	"id": "eHbZqY",
 	"category": "denmark",
 	"front": "name largest islands 11-20",
 	"back": "1. Møn [mün], 2. Læsø [LESS-ü], 3. Samsø [SAM-sü], 4. Rømø [RÜ-mü], 5. Fanø [FAYN-ü], 6. Tåsinge [TOH-sing-eh], 7. Ærø [AY-rö], 8. Fur [FOO-ah], 9. Anholt [en-HOLT], 10. Saltholm [selt-HOLM]@@islands11to20",
 	"pronunciation": ""
 },
 {
-	"suuid": "XN2b1y",
+	"id": "XN2b1y",
 	"category": "denmark",
 	"front": "name the 10 largest cities",
 	"back": "1. København [KÖ-pen-HAU-en], 2. Århus [OH-hoos], 3. Odense [OH-in-zah], 4. Ålborg [all-BOH], 5. Esbjerg [es-bee-YA], 6. Randers [rah-nahs], 7. Kolding [koh-ling], 8. Horsens [HOH-sins], 9. Vejle [VIGH-leh], 10. Roskilde [RUSS-kee-leh]@@cities1to10",
 	"pronunciation": ""
 },
 {
-	"suuid": "25gSip",
+	"id": "25gSip",
 	"category": "denmark",
 	"front": "name the 11th-20th largest cities",
 	"back": "1. Herning [HAIR-ning], 2. Silkeborg [SIL-kah-boh], 3. Fredericia [FREH-rish-sha], 4. Viborg [vee-boh], 5. Køge [kü], 6. Holstebro [HOL-sti-bro], 7. Slagelse [SLAY-ill-za], 8. Holbæk [HOL-bek], 9. Sønderborg [SÖ-na-boh], 10. Svendborg [SVIN-boh]@@cities11to20",
