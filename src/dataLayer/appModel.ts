@@ -12,8 +12,15 @@ export const getAppData = () => {
 };
 
 const parseFlashcardBack = (rawBack: string): string[] => {
-	const back = 'bbb';
-	const imageIdCode = 'iii';
+	let back = '';
+	let imageIdCode = '';
+	if (rawBack.includes('@@')) {
+		const parts = rawBack.split('@@');
+		back = parts[0];
+		imageIdCode = parts[1];
+	} else {
+		back = rawBack;
+	}
 	return [back, imageIdCode];
 
 }
