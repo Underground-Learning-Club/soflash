@@ -203,129 +203,185 @@
     "pronunciation": ""
   },
   {
-	"id": "vIyTSj",
-	"category": "da",
-	"front": "What is that called?",
-	"back": "Hvad hedder det?",
-	"pronunciation": "veLL hiTHa TEE"
-},
-{
-	"id": "vjWVnS",
-	"category": "da",
-	"front": "Hello, my name is Edward",
-	"back": "Goddag, jeg hedder Edward",
-	"pronunciation": "goo-DAY JIGH-hiTHa Edward"
-},
-{
-	"id": "dHb16B",
-	"category": "da",
-	"front": "No, I am from America, but I live in Berlin.",
-	"back": "Nej, jeg er fra America, men jeg bor i Berlin.",
-	"pronunciation": "NIGH, jai eh fra America, men jigh BOR ee Berlin"
-},
-{
-	"id": "hoX83B",
-	"category": "da",
-	"front": "Good evening, Sara.",
-	"back": "God aften, Sara.",
-	"pronunciation": "go-AFFdn"
-},
-{
-	"id": "Uy0GNx",
-	"category": "da",
-	"front": "I'm learning Danish.",
-	"back": "jeg laerer dansk.",
-	"pronunciation": "jai lehrer densk"
-},
-{
-	"id": "fJthfx",
-	"category": "da",
-	"front": "It is easy to read and write Danish, but it is hard to pronounce Danish correctly.",
-	"back": "Det er let at laese og skrive dansk, men det er svaert at udtale dansk korrekt.",
-	"pronunciation": "day er lit o layze o skreeva densk, meh day er svairt o oo-TAY-leh densk korrekt"
-},
-{
-	"id": "bJnx7Z",
-	"category": "da",
-	"front": "Hi Sara, how are you doing? / Good, thanks.",
-	"back": "Dav Sara, hvordan har du det? / Fint, tak.",
-	"pronunciation": "dah-ow sara, vah-denn HAH doo day"
-},
-{
-	"id": "ukhTcr",
-	"category": "da",
-	"front": "Two beers, please.",
-	"back": "To øl, tak.",
-	"pronunciation": "toh öl tahk"
-},
-{
-	"id": "gQj8AA",
-	"category": "da",
-	"front": "I don't understand.",
-	"back": "Undskyld., jeg forstår det ikke.",
-	"pronunciation": "OON-skool, ya foh-stow DAY eeg"
-},
-{
-	"id": "vnGFq5",
-	"category": "da",
-	"front": "I am a smart guy.",
-	"back": "Jeg er en smart fyr.",
-	"pronunciation": "yay er ain smart für"
-},
-{
-	"id": "suCsyL",
-	"category": "da",
-	"front": "Good morning, Sara.",
-	"back": "God morgen, Sara.",
-	"pronunciation": "go mourn, Sara"
-},
-{
-	"id": "UDq0JD",
-	"category": "da",
-	"front": "I'm doing fine, thank you.",
-	"back": "Jeg har det godt, tak.",
-	"pronunciation": "YIGH har de GAWD, tahk."
-},
-{
-	"id": "K6NOdt",
-	"category": "da",
-	"front": "Wonderful",
-	"back": "Glimrende",
-	"pronunciation": "GLEEM-en-nah"
-},
-{
-	"id": "Sq8KsR",
-	"category": "da",
-	"front": "Auf wiedersehen",
-	"back": "Farvel",
-	"pronunciation": "far-VELL"
-},
-{
-	"id": "JMWFjk",
-	"category": "denmark",
-	"front": "name the 10 largest islands",
-	"back": "1. Zealand (Sjælland [zay-LENN]), 2. Vendsyssel-Thy [VENN-sissell-TSEE], 3. Funen (Fyn [feen]), 4. Lolland [loll-LEN], 5. Bornholm [bon-HOLM], 6. Falster [FEL-stah], 7. Langeland [LONG-eh-lan], 8. Mors [mors], 9. Als [els], 10. Amager [ah-mah]@@largestIslands",
-	"pronunciation": ""
-},
-{
-	"id": "eHbZqY",
-	"category": "denmark",
-	"front": "name largest islands 11-20",
-	"back": "1. Møn [mün], 2. Læsø [LESS-ü], 3. Samsø [SAM-sü], 4. Rømø [RÜ-mü], 5. Fanø [FAYN-ü], 6. Tåsinge [TOH-sing-eh], 7. Ærø [AY-rö], 8. Fur [FOO-ah], 9. Anholt [en-HOLT], 10. Saltholm [selt-HOLM]@@islands11to20",
-	"pronunciation": ""
-},
-{
-	"id": "XN2b1y",
-	"category": "denmark",
-	"front": "name the 10 largest cities",
-	"back": "1. København [KÖ-pen-HAU-en], 2. Århus [OH-hoos], 3. Odense [OH-in-zah], 4. Ålborg [all-BOH], 5. Esbjerg [es-bee-YA], 6. Randers [rah-nahs], 7. Kolding [koh-ling], 8. Horsens [HOH-sins], 9. Vejle [VIGH-leh], 10. Roskilde [RUSS-kee-leh]@@cities1to10",
-	"pronunciation": ""
-},
-{
-	"id": "25gSip",
-	"category": "denmark",
-	"front": "name the 11th-20th largest cities",
-	"back": "1. Herning [HAIR-ning], 2. Silkeborg [SIL-kah-boh], 3. Fredericia [FREH-rish-sha], 4. Viborg [vee-boh], 5. Køge [kü], 6. Holstebro [HOL-sti-bro], 7. Slagelse [SLAY-ill-za], 8. Holbæk [HOL-bek], 9. Sønderborg [SÖ-na-boh], 10. Svendborg [SVIN-boh]@@cities11to20",
-	"pronunciation": ""
-}
+    "id": "vIyTSj",
+    "category": "da",
+    "front": "What is that called?",
+    "back": "Hvad hedder det?",
+    "pronunciation": "veLL hiTHa TEE"
+  },
+  {
+    "id": "vjWVnS",
+    "category": "da",
+    "front": "Hello, my name is Edward",
+    "back": "Goddag, jeg hedder Edward",
+    "pronunciation": "goo-DAY JIGH-hiTHa Edward"
+  },
+  {
+    "id": "dHb16B",
+    "category": "da",
+    "front": "No, I am from America, but I live in Berlin.",
+    "back": "Nej, jeg er fra America, men jeg bor i Berlin.",
+    "pronunciation": "NIGH, jai eh fra America, men jigh BOR ee Berlin"
+  },
+  {
+    "id": "hoX83B",
+    "category": "da",
+    "front": "Good evening, Sara.",
+    "back": "God aften, Sara.",
+    "pronunciation": "go-AFFdn"
+  },
+  {
+    "id": "Uy0GNx",
+    "category": "da",
+    "front": "I'm learning Danish.",
+    "back": "jeg laerer dansk.",
+    "pronunciation": "jai lehrer densk"
+  },
+  {
+    "id": "fJthfx",
+    "category": "da",
+    "front": "It is easy to read and write Danish, but it is hard to pronounce Danish correctly.",
+    "back": "Det er let at laese og skrive dansk, men det er svaert at udtale dansk korrekt.",
+    "pronunciation": "day er lit o layze o skreeva densk, meh day er svairt o oo-TAY-leh densk korrekt"
+  },
+  {
+    "id": "bJnx7Z",
+    "category": "da",
+    "front": "Hi Sara, how are you doing? / Good, thanks.",
+    "back": "Dav Sara, hvordan har du det? / Fint, tak.",
+    "pronunciation": "dah-ow sara, vah-denn HAH doo day"
+  },
+  {
+    "id": "ukhTcr",
+    "category": "da",
+    "front": "Two beers, please.",
+    "back": "To øl, tak.",
+    "pronunciation": "toh öl tahk"
+  },
+  {
+    "id": "gQj8AA",
+    "category": "da",
+    "front": "I don't understand.",
+    "back": "Undskyld., jeg forstår det ikke.",
+    "pronunciation": "OON-skool, ya foh-stow DAY eeg"
+  },
+  {
+    "id": "vnGFq5",
+    "category": "da",
+    "front": "I am a smart guy.",
+    "back": "Jeg er en smart fyr.",
+    "pronunciation": "yay er ain smart für"
+  },
+  {
+    "id": "suCsyL",
+    "category": "da",
+    "front": "Good morning, Sara.",
+    "back": "God morgen, Sara.",
+    "pronunciation": "go mourn, Sara"
+  },
+  {
+    "id": "UDq0JD",
+    "category": "da",
+    "front": "I'm doing fine, thank you.",
+    "back": "Jeg har det godt, tak.",
+    "pronunciation": "YIGH har de GAWD, tahk."
+  },
+  {
+    "id": "K6NOdt",
+    "category": "da",
+    "front": "Wonderful",
+    "back": "Glimrende",
+    "pronunciation": "GLEEM-en-nah"
+  },
+  {
+    "id": "Sq8KsR",
+    "category": "da",
+    "front": "Auf wiedersehen",
+    "back": "Farvel",
+    "pronunciation": "far-VELL"
+  },
+  {
+    "id": "JMWFjk",
+    "category": "denmark",
+    "front": "name the 10 largest islands",
+    "back": "1. Zealand (Sjælland [zay-LENN]), 2. Vendsyssel-Thy [VENN-sissell-TSEE], 3. Funen (Fyn [feen]), 4. Lolland [loll-LEN], 5. Bornholm [bon-HOLM], 6. Falster [FEL-stah], 7. Langeland [LONG-eh-lan], 8. Mors [mors], 9. Als [els], 10. Amager [ah-mah]@@largestIslands",
+    "pronunciation": ""
+  },
+  {
+    "id": "eHbZqY",
+    "category": "denmark",
+    "front": "name largest islands 11-20",
+    "back": "1. Møn [mün], 2. Læsø [LESS-ü], 3. Samsø [SAM-sü], 4. Rømø [RÜ-mü], 5. Fanø [FAYN-ü], 6. Tåsinge [TOH-sing-eh], 7. Ærø [AY-rö], 8. Fur [FOO-ah], 9. Anholt [en-HOLT], 10. Saltholm [selt-HOLM]@@islands11to20",
+    "pronunciation": ""
+  },
+  {
+    "id": "XN2b1y",
+    "category": "denmark",
+    "front": "name the 10 largest cities",
+    "back": "1. København [KÖ-pen-HAU-en], 2. Århus [OH-hoos], 3. Odense [OH-in-zah], 4. Ålborg [all-BOH], 5. Esbjerg [es-bee-YA], 6. Randers [rah-nahs], 7. Kolding [koh-ling], 8. Horsens [HOH-sins], 9. Vejle [VIGH-leh], 10. Roskilde [RUSS-kee-leh]@@cities1to10",
+    "pronunciation": ""
+  },
+  {
+    "id": "25gSip",
+    "category": "denmark",
+    "front": "name the 11th-20th largest cities",
+    "back": "1. Herning [HAIR-ning], 2. Silkeborg [SIL-kah-boh], 3. Fredericia [FREH-rish-sha], 4. Viborg [vee-boh], 5. Køge [kü], 6. Holstebro [HOL-sti-bro], 7. Slagelse [SLAY-ill-za], 8. Holbæk [HOL-bek], 9. Sønderborg [SÖ-na-boh], 10. Svendborg [SVIN-boh]@@cities11to20",
+    "pronunciation": ""
+  },
+  {
+    "id": "dvvZjS",
+    "category": "da",
+    "front": "What's this flower called?",
+    "back": "Hvad hedder denne blomst?",
+    "pronunciation": "VEH hethah dain blomst"
+  },
+  {
+    "id": "jDGe6T",
+    "category": "da",
+    "front": "Denmark hedder Danmark på dansk.",
+    "back": "Denmark is called Danmark in Danish.",
+    "pronunciation": "pah densk"
+  },
+  {
+    "id": "3EEFdb",
+    "category": "da",
+    "front": "Ved du hvad han hedder?",
+    "back": "Do you know his name?",
+    "pronunciation": "vill DOO vah hen HILLah"
+  },
+  {
+    "id": "v32WoA",
+    "category": "da",
+    "front": "Ved du hvad hun hedder?",
+    "back": "Do you know her name?",
+    "pronunciation": "vill DOO vah hoon HILLah"
+  },
+  {
+    "id": "GoqmA6",
+    "category": "da",
+    "front": "Undskyld, noget er gået galt.",
+    "back": "Sorry, something has gone wrong.",
+    "pronunciation": "OON-skool, noah air GO-ah gayt"
+  },
+  {
+    "id": "a9vTx8",
+    "category": "da",
+    "front": "Undskyld mig, hvor er udgangen?",
+    "back": "Excuse me, where is the exit?",
+    "pronunciation": "OON-skool migh, voh air OO-gan(k)-/en/"
+  },
+  {
+    "id": "WjJwtE",
+    "category": "da",
+    "front": "Undskyld mig, må jeg åbne vinduet?",
+    "back": "Excuse me, may I open the window?",
+    "pronunciation": "OON-skool migh, moh ya ohpne VIN-doo-ah"
+  },
+  {
+    "id": "4NfDIh",
+    "category": "da",
+    "front": "Godt spørgsmål.",
+    "back": "Good question.",
+    "pronunciation": "got spös-MOHl"
+  }
 ]
