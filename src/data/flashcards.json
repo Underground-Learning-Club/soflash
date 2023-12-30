@@ -628,5 +628,26 @@
 	"front": "pr. huj",
 	"back": "hey",
 	"pronunciation": "HOO-ee"
+},
+{
+	"id": "IdTLMx",
+	"category": "da",
+	"front": "pr. rule for \"g\"",
+	"back": "only pronounce G at beginning of word, e.g. venlig (friendly), årlig (yearly), gulerodskage (carrot cake)",
+	"pronunciation": "VEN-lee, OH-lee, GOO-ler-röz-KAY"
+},
+{
+	"id": "M6rRYe",
+	"category": "da",
+	"front": "pr. rule for \"d\"",
+	"back": "when D appears after N or L, it’s silent, e.g. hånd (hand), kold (cold), otherwise it's between /th/ and /ll/, e.g. jeg hedder Edward",
+	"pronunciation": "hahn, kohl, jigh he/thll/er"
+},
+{
+	"id": "VxdoFf",
+	"category": "da",
+	"front": "pr. rule for \"hv\"",
+	"back": "H is silent, e.g. hvad er det, hvor er det (what/where)",
+	"pronunciation": "vah air day (as in \"bat\"), voh air day"
 }
 ]
