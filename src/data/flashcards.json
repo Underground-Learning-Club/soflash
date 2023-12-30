@@ -383,5 +383,250 @@
     "front": "Good question.",
     "back": "Godt spørgsmål.",
     "pronunciation": "got spös-MOHl"
-  }
+  },
+  {
+	"id": "yY4Cxn",
+	"category": "da",
+	"front": "pr. lade",
+	"back": "let",
+	"pronunciation": "layl"
+},
+{
+	"id": "aBmNN9",
+	"category": "da",
+	"front": "pr. gad",
+	"back": "bothered",
+	"pronunciation": "gayl"
+},
+{
+	"id": "S631pp",
+	"category": "da",
+	"front": "pr. inde",
+	"back": "inside",
+	"pronunciation": "EE-nah"
+},
+{
+	"id": "SrzUAt",
+	"category": "da",
+	"front": "pr. nede",
+	"back": "down",
+	"pronunciation": "NAY-the"
+},
+{
+	"id": "4jJodH",
+	"category": "da",
+	"front": "pr. ned",
+	"back": "down",
+	"pronunciation": "[nay-el]"
+},
+{
+	"id": "vVV4v1",
+	"category": "da",
+	"front": "pr. sile",
+	"back": "sieve",
+	"pronunciation": "SEE-leh"
+},
+{
+	"id": "ORss8d",
+	"category": "da",
+	"front": "pr. vid",
+	"back": "extensive",
+	"pronunciation": "VEE-el"
+},
+{
+	"id": "qQzEYI",
+	"category": "da",
+	"front": "pr. klude",
+	"back": "cloth",
+	"pronunciation": "KLOO-the"
+},
+{
+	"id": "TU02Wp",
+	"category": "da",
+	"front": "pr. tud",
+	"back": "nozzle",
+	"pronunciation": "TOO-el"
+},
+{
+	"id": "oHKAW4",
+	"category": "da",
+	"front": "pr. dyst",
+	"back": "duel",
+	"pronunciation": "düst"
+},
+{
+	"id": "ydEdVR",
+	"category": "da",
+	"front": "pr. lyde",
+	"back": "sounds",
+	"pronunciation": "lül"
+},
+{
+	"id": "2KGw2f",
+	"category": "da",
+	"front": "pr. fremmed",
+	"back": "stranger",
+	"pronunciation": "frahmel"
+},
+{
+	"id": "hg3ZzI",
+	"category": "da",
+	"front": "pr. kød",
+	"back": "meat",
+	"pronunciation": "köl"
+},
+{
+	"id": "WZwnbS",
+	"category": "da",
+	"front": "pr. bøde",
+	"back": "penalty",
+	"pronunciation": "bö-the"
+},
+{
+	"id": "FHlaUa",
+	"category": "da",
+	"front": "pr. sød",
+	"back": "sweet",
+	"pronunciation": "söl"
+},
+{
+	"id": "2qUtUp",
+	"category": "da",
+	"front": "pr. håbe",
+	"back": "hope",
+	"pronunciation": "OH-bah"
+},
+{
+	"id": "YNEaKP",
+	"category": "da",
+	"front": "pr. tåre",
+	"back": "tear",
+	"pronunciation": "TOR-re"
+},
+{
+	"id": "Cids2x",
+	"category": "da",
+	"front": "pr. konge",
+	"back": "king",
+	"pronunciation": "KONG-/ah"
+},
+{
+	"id": "B9JVM3",
+	"category": "da",
+	"front": "pr. havne",
+	"back": "harbours",
+	"pronunciation": "HOW-neh"
+},
+{
+	"id": "g2i5Ot",
+	"category": "da",
+	"front": "pr. gavne",
+	"back": "benefits",
+	"pronunciation": "GOW-neh"
+},
+{
+	"id": "Q8yq7c",
+	"category": "da",
+	"front": "pr. levne",
+	"back": "live",
+	"pronunciation": "lay-OH-neh"
+},
+{
+	"id": "9Zmk1V",
+	"category": "da",
+	"front": "pr. nævne",
+	"back": "mention",
+	"pronunciation": "nay-OH-neh"
+},
+{
+	"id": "AQhVvH",
+	"category": "da",
+	"front": "pr. egne",
+	"back": "own",
+	"pronunciation": "IGH-neh"
+},
+{
+	"id": "ZmfsIg",
+	"category": "da",
+	"front": "pr. regne",
+	"back": "rain",
+	"pronunciation": "RIGH-neh"
+},
+{
+	"id": "l4jnIR",
+	"category": "da",
+	"front": "pr. leg",
+	"back": "play",
+	"pronunciation": "LIGH-ee"
+},
+{
+	"id": "2Rv3c4",
+	"category": "da",
+	"front": "pr. fej",
+	"back": "coward",
+	"pronunciation": "FIGH-ee"
+},
+{
+	"id": "j0zZNr",
+	"category": "da",
+	"front": "pr. tvivle",
+	"back": "doubt",
+	"pronunciation": "TVeeoo-lah"
+},
+{
+	"id": "GM2xeF",
+	"category": "da",
+	"front": "pr. søvne",
+	"back": "sleep",
+	"pronunciation": "SEW-nah"
+},
+{
+	"id": "ZmODQQ",
+	"category": "da",
+	"front": "pr. høvle",
+	"back": "hand plane (wood tool)",
+	"pronunciation": "HOHL-lah"
+},
+{
+	"id": "9JrRHL",
+	"category": "da",
+	"front": "pr. doven",
+	"back": "dove",
+	"pronunciation": "DOH-win"
+},
+{
+	"id": "SADZOy",
+	"category": "da",
+	"front": "pr. hoven",
+	"back": "swollen",
+	"pronunciation": "hOH-win"
+},
+{
+	"id": "qElxb4",
+	"category": "da",
+	"front": "pr. nøje",
+	"back": "carefully",
+	"pronunciation": "NEU-jah"
+},
+{
+	"id": "Hu20IR",
+	"category": "da",
+	"front": "pr. løgne",
+	"back": "lies",
+	"pronunciation": "LEU-neh"
+},
+{
+	"id": "LHQ1Z3",
+	"category": "da",
+	"front": "pr. huje",
+	"back": "high",
+	"pronunciation": "HWEE-yah"
+},
+{
+	"id": "6fnNWZ",
+	"category": "da",
+	"front": "pr. huj",
+	"back": "hey",
+	"pronunciation": "HOO-ee"
+}
 ]
