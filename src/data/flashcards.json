@@ -329,59 +329,59 @@
     "pronunciation": ""
   },
   {
-    "id": "dvvZjS",
+    "id": "kyv7Eo",
     "category": "da",
     "front": "What's this flower called?",
     "back": "Hvad hedder denne blomst?",
     "pronunciation": "VEH hethah dain blomst"
   },
   {
-    "id": "jDGe6T",
+    "id": "YYpXmf",
     "category": "da",
-    "front": "Denmark hedder Danmark på dansk.",
-    "back": "Denmark is called Danmark in Danish.",
+    "front": "Denmark is called Danmark in Danish.",
+    "back": "Denmark hedder Danmark på dansk.",
     "pronunciation": "pah densk"
   },
   {
-    "id": "3EEFdb",
+    "id": "V6Z8yL",
     "category": "da",
-    "front": "Ved du hvad han hedder?",
-    "back": "Do you know his name?",
+    "front": "Do you know his name?",
+    "back": "Ved du hvad han hedder?",
     "pronunciation": "vill DOO vah hen HILLah"
   },
   {
-    "id": "v32WoA",
+    "id": "VtgJSz",
     "category": "da",
-    "front": "Ved du hvad hun hedder?",
-    "back": "Do you know her name?",
+    "front": "Do you know her name?",
+    "back": "Ved du hvad hun hedder?",
     "pronunciation": "vill DOO vah hoon HILLah"
   },
   {
-    "id": "GoqmA6",
+    "id": "dxiV6M",
     "category": "da",
-    "front": "Undskyld, noget er gået galt.",
-    "back": "Sorry, something has gone wrong.",
+    "front": "Sorry, something has gone wrong.",
+    "back": "Undskyld, noget er gået galt.",
     "pronunciation": "OON-skool, noah air GO-ah gayt"
   },
   {
-    "id": "a9vTx8",
+    "id": "DBeCXG",
     "category": "da",
-    "front": "Undskyld mig, hvor er udgangen?",
-    "back": "Excuse me, where is the exit?",
+    "front": "Excuse me, where is the exit?",
+    "back": "Undskyld mig, hvor er udgangen?",
     "pronunciation": "OON-skool migh, voh air OO-gan(k)-/en/"
   },
   {
-    "id": "WjJwtE",
+    "id": "DY1vx0",
     "category": "da",
-    "front": "Undskyld mig, må jeg åbne vinduet?",
-    "back": "Excuse me, may I open the window?",
+    "front": "Excuse me, may I open the window?",
+    "back": "Undskyld mig, må jeg åbne vinduet?",
     "pronunciation": "OON-skool migh, moh ya ohpne VIN-doo-ah"
   },
   {
-    "id": "4NfDIh",
+    "id": "m7hkLR",
     "category": "da",
-    "front": "Godt spørgsmål.",
-    "back": "Good question.",
+    "front": "Good question.",
+    "back": "Godt spørgsmål.",
     "pronunciation": "got spös-MOHl"
   }
 ]
