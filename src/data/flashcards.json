@@ -649,5 +649,68 @@
 	"front": "pr. rule for \"hv\"",
 	"back": "H is silent, e.g. hvad er det, hvor er det (what/where)",
 	"pronunciation": "vah air day (as in \"bat\"), voh air day"
+},
+{
+	"id": "hK3cVl",
+	"category": "da",
+	"front": "numbers 1 to 10",
+	"back": "en, to, tre, fire, fem, seks, syv, otte, ni, ti",
+	"pronunciation": "ayn, toh, tray, vier, fem, sex, syoo, ohdah, nee, tee"
+},
+{
+	"id": "7L8lWY",
+	"category": "da",
+	"front": "numbers 11 to 20",
+	"back": "elleve, tolv, tretten, fjorten, femten, seksten, sytten, atten, nitten, tyve",
+	"pronunciation": "EL-veh, talf, traht'en, fyorden, FEMden, SIGH-sten, sötten (br. certain), AT-en, NIT-en, two"
+},
+{
+	"id": "yqTku5",
+	"category": "da",
+	"front": "numbers 21 to 30",
+	"back": "enogtyve, toogtyve, treogtyve, fireogtyve, femogtyve, seksogtyve, syvogtyve, otteogtyve, niogtyve, tredive",
+	"pronunciation": "EEN-oh-too, TOE-oh-too, TRAY-oh-too, vier-oh-too, fem-oh-too, sex-oh-too, syoo-oh-too, ord-oh-too, NEE-oh-too, TRAHL-vah"
+},
+{
+	"id": "0m2BiS",
+	"category": "da",
+	"front": "numbers 30, 40, 50, 60, 70, 80, 90, 100",
+	"back": "tredive, fyrre, halvtreds, tres, halvfjerds, firs, halvfems, hundrede",
+	"pronunciation": "TRAHL-veh, furrr, hel-TRESS, tres, hel-FYASS, fierce, hel-FEMS, HOON-ah"
+},
+{
+	"id": "VsdyDZ",
+	"category": "da",
+	"front": "cardinal numbers 1 to 10",
+	"back": "første, anden, tredje, fjerde, femte, sjette, syvende, ottende, niende, tiende",
+	"pronunciation": "FURS-steh, enn, TRELL-ja, vier, FEM-deh, SHAY-deh, SOO-yen-neh, OUGHT-en-nah, NEE-en-nah, TEE-en-nah"
+},
+{
+	"id": "RQu7p3",
+	"category": "da",
+	"front": "She's not big, she's small.",
+	"back": "Hun er ikke stor, hun er lille.",
+	"pronunciation": "hoon air ig stor, hoon air leel"
+},
+{
+	"id": "NZtFmW",
+	"category": "da",
+	"front": "Where are the cakes and coffee?",
+	"back": "Hvor er kagerne og kaffen?",
+	"pronunciation": "voh air KAY-er-nah ah KOFFen"
+},
+{
+	"id": "0s3gc8",
+	"category": "da",
+	"front": "a street, a yard, a meeting, a floor",
+	"back": "en gade, en gård, et møde, et gulv",
+	"pronunciation": "ain GEL, ain GOR, it mül, it gool"
+},
+{
+	"id": "w2kBtB",
+	"category": "da",
+	"front": "pr. jeg kommer, du kommer, han kommer, hun kommer, vi kommer, i kommer, de kommer",
+	"back": "I come, you come, he comes, she comes, we come, you all come, they come",
+	"pronunciation": "ya, doo, hen, hoon, vee, ee, dee"
 }
 ]
