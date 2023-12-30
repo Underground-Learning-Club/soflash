@@ -4,7 +4,7 @@ import { AppContext } from "../AppContext";
 export const PageAdd = () => {
 	let { flashcards } = useContext(AppContext);
 
-	flashcards = flashcards.filter(m => m.isLanguage);
+	flashcards = flashcards.filter(m => m.isLanguage).sort((a,b) => a.category > b.category ? 1 : -1);
 
 	return (
 		<section className="pt-4">
@@ -12,7 +12,7 @@ export const PageAdd = () => {
 
 			{flashcards.map((flashcard) => {
 				return (
-					<div className="mb-3">
+					<div className="mb-3"><span className="font-semibold">{flashcard.category}</span> -{' '}
 						{flashcard.back.split(" ").map((word, index) => {
 							return <>
 								<span key={index}><a target="_blank" className="underline" href={`https://tatoeba.org/de/sentences/search?from=${flashcard.tatoebaLanguageIdCode}&query=${word}&to=eng`}>{word}</a></span>{" "}
